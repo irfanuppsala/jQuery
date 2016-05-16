@@ -1,0 +1,35 @@
+/* color animate */
+#elem {
+color: #006;
+background-color: #aaa;
+font-size: 25px;
+padding: 1em;
+text-align: center;
+}
+
+/* fold effect */
+#square {
+width: 100px;
+height: 100px;
+background: #700000;
+}
+
+/* scale effect */
+#square2 {
+width: 100px;
+height: 100px;
+background: #FFFF00;
+}
+
+.draggable {
+width: 150px;
+height: 150px;
+background-color: blue;
+margin: 10px;
+}
+
+.toggler { width: 500px; height: 200px; position: relative; }
+#button { padding: .5em 1em; text-decoration: none; }
+#effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
+#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+.ui-effects-transfer { border: 2px dotted gray; }

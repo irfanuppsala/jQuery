@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>jQuery in action</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/app.css" rel="stylesheet">
+      <link href=" jquery-ui/jquery-ui.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- color animate start HTML-->
+     		<div id="elem">color animations</div>
+    		<button id="toggle">animate colors</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+    		<!-- fold effect start HTML-->
+    		<p>Click button to toggle the box.</p>
+    		<div id="square"></div>
+    		<button id="squareToggle">fold square</button>
+      </div>
+
+      <div class="col-md-4">
+    		<!-- scale effect start HTML-->
+    		<p>Click anywhere to toggle the box.</p>
+    		<div id="square2"></div>
+    		<button id="squareScale">Scale square</button>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="draggable" id="draggable"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="slider" style="width: 50%"></div>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div class="col-md-12">&nbsp;</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="toggler">
+          <div id="effect" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Effect</h3>
+            <p>
+              Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+            </p>
+          </div>
+        </div>
+         
+        <span>Change event from dropdown list</span><br />
+        <select name="effects" id="effectTypes">
+          <option value="blind">Blind</option>
+          <option value="bounce">Bounce</option>
+          <option value="clip">Clip</option>
+          <option value="drop">Drop</option>
+          <option value="explode">Explode</option>
+          <option value="fade">Fade</option>
+          <option value="fold">Fold</option>
+          <option value="highlight">Highlight</option>
+          <option value="puff">Puff</option>
+          <option value="pulsate">Pulsate</option>
+          <option value="scale">Scale</option>
+          <option value="shake">Shake</option>
+          <option value="size">Size</option>
+          <option value="slide">Slide</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
