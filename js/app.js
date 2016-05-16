@@ -31,10 +31,20 @@ $( "#squareScale" ).click(function() {
 /* scale effect start JQuery*/
 $("#draggable").draggable();
 
+/* Slider scale effects*/
 $(function() {
-  $( "#slider" ).slider();
-
-});
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 1, 250 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
 
 /* Button effects */
 $(function() {
